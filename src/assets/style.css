@@ -1,0 +1,151 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  width: 90%;
+  max-width: 500px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 1rem;
+  background-color: rgb(183, 175, 253);
+  border-radius: 0.5rem;
+}
+
+.display {
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  background-color: rgb(206, 157, 252);
+}
+
+.main-display {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(221, 221, 243);
+  min-height: 50%;
+}
+
+.operator {
+  font-size: 1rem;
+  color: grey;
+  padding-left: 5px;
+}
+
+.typed {
+  font-size: 2rem;
+  padding-right: 5px;
+}
+
+.secondary-display {
+  background-color: rgb(203, 252, 131);
+  text-align: start;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.preview-result {
+  background-color: palevioletred;
+  text-align: start;
+  font-size: 1.2rem;
+  columns: grey;
+  padding: 0.3rem;
+}
+
+.keypad {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.row1 {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: bisque;
+}
+
+.row2 {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: blueviolet;
+}
+
+.col1 {
+  padding: 0.25rem;
+  flex-grow: 1;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  background-color: rgb(210, 175, 243);
+}
+
+.col2 {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 5px;
+  background-color: rgb(240, 229, 250);
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  color: black;
+  border-radius: 0.25rem;
+  border: 1px solid black;
+  padding: 3px;
+  font-size: 1.2rem;
+}
+
+.btn-nb {
+}
+
+.btn-op {
+}
+
+.btn-clear {
+}
+
+.btn-del {
+}
