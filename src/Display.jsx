@@ -1,6 +1,6 @@
 import MainDisplay from './MainDisplay'
 import SecondaryDisplay from './SecondaryDisplay'
-import PreviewResult from './PreviewResult'
+// import PreviewResult from './PreviewResult'
 import './assets/style.css'
 
 
@@ -9,7 +9,7 @@ function Display({ screenContent, operator, top }) {
     <div className='display'>
       <SecondaryDisplay content={top} />
       <MainDisplay content={ screenContent } operator={operator} />
-      <PreviewResult />
+      {/* <PreviewResult /> */}
     </div>
   )
 }

@@ -8,7 +8,7 @@ function Keypad({ keysArray, clickCallback }) {
 
   const deleting = keysArray
     .filter((item, index) => index < 2)
-    .map((elt, index) => <input type="button" className='btn' key={index} onClick={handleClick} value={elt} />);
+    .map((elt, index) => <input type="button" className='btn btn-clear' key={index} onClick={handleClick} value={elt} />);
 
   return (
     <div className='keypad'>
@@ -18,14 +18,14 @@ function Keypad({ keysArray, clickCallback }) {
           {keysArray
             .filter((item, index) => index >= 2 && index <= 13)
             .map((element, index) => {
-              return <input type='button' className='btn' key={index} onClick={handleClick} value={element} />;
+              return <input type='button' className='btn btn-nb' key={index} onClick={handleClick} value={element} />;
             })}
         </div>
         <div className="col2">
           {keysArray
             .filter((item, index) => index > 13)
             .map((element, index) => {
-              return <input type="button" className='btn' key={index} onClick={handleClick} value={element} />;
+              return <input type="button" className='btn btn-op' key={index} onClick={handleClick} value={element} />;
             })}
         </div>
       </div>

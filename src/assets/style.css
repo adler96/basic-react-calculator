@@ -25,13 +25,13 @@ body {
 .app {
   width: 90%;
   max-width: 500px;
-  min-height: 100vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
   gap: 1rem;
-  background-color: rgb(183, 175, 253);
+  background-color: rgb(237, 236, 248);
   border-radius: 0.5rem;
 }
 
@@ -39,9 +39,10 @@ body {
   min-height: 100px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: stretch;
-  background-color: rgb(206, 157, 252);
+  background-color: rgb(63, 1, 121);
+  border: 1px solid red;
 }
 
 .main-display {
@@ -49,13 +50,13 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(221, 221, 243);
-  min-height: 50%;
+  background-color: rgb(255, 255, 255);
+  flex-grow: 2;
 }
 
 .operator {
-  font-size: 1rem;
-  color: grey;
+  font-size: 1.2rem;
+  color: rgb(70, 69, 69);
   padding-left: 5px;
 }
 
@@ -65,10 +66,11 @@ body {
 }
 
 .secondary-display {
-  background-color: rgb(203, 252, 131);
+  background-color: rgb(228, 253, 190);
   text-align: start;
   font-size: 1.5rem;
   padding: 0.5rem;
+  min-height: 35px;
 }
 
 .preview-result {
@@ -83,7 +85,7 @@ body {
   width: 100%;
   padding: 0.5rem;
   border-radius: 0.5rem;
-  background-color: aliceblue;
+  background-color: rgb(16, 122, 214);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -96,7 +98,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
-  background-color: bisque;
+  background-color: white;
 }
 
 .row2 {
@@ -105,7 +107,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
-  background-color: blueviolet;
+  background-color: white;
 }
 
 .col1 {
@@ -115,7 +117,7 @@ body {
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  background-color: rgb(210, 175, 243);
+  background-color: rgb(227, 207, 245);
 }
 
 .col2 {
@@ -125,7 +127,7 @@ body {
   justify-content: flex-start;
   align-items: stretch;
   gap: 5px;
-  background-color: rgb(240, 229, 250);
+  background-color: rgb(241, 235, 247);
 }
 
 .btn {
@@ -133,19 +135,22 @@ body {
   background-color: transparent;
   color: black;
   border-radius: 0.25rem;
-  border: 1px solid black;
   padding: 3px;
   font-size: 1.2rem;
 }
 
 .btn-nb {
+  background-color: white;
 }
 
 .btn-op {
+  background-color: blue;
+  padding: 0.5rem;
+  color: white;
 }
 
 .btn-clear {
-}
-
-.btn-del {
+  background-color: rgb(255, 11, 11);
+  padding: 0.75rem;
+  color: white;
 }
